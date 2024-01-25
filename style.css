@@ -1,0 +1,110 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Lexend Light";
+  letter-spacing: 1px;
+}
+
+h1 {
+  line-height: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1b263b;
+  padding-bottom: 20px;
+}
+
+div.form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  align-items: center;
+}
+
+label {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #1b263b;
+}
+
+input[type="text"] {
+  font-size: 18px;
+  font-family: "Lexend Light";
+  margin-bottom: 5px;
+}
+
+span.credits {
+  position:absolute;
+  font-size: 14px;
+  bottom:-10%;
+  right:-5%;
+}
+
+div.content {
+  margin: auto;
+  width: 90%;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+div.column {
+  flex: 50%;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+div.skills {
+  margin-top: 5px;
+}
+
+div.buttons {
+  margin: auto;
+}
+
+span.spacing {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+select {
+  margin-top: 10px;
+   font-family: "Lexend Light";
+  font-size: 16px;
+}
+
+option {
+  font-family: "Lexend Light";
+  font-size: 16px;
+}
+
+input[type="submit"] {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ebebeb;
+    color: #415a77;
+    font-family: "Lexend Light";
+    font-size: 16px;
+    text-align: center;
+    user-select: none;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #dbdbdb;
+}
+
+textarea {
+  width: 85%;
+  font-family: "Lexend Light";
+  color: #696969;
+  font-size: 18px;
+  user-select: none;
+}
