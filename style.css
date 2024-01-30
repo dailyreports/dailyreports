@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  font-family: "Lexend Light";
+  font-family: "Lexend Light", Tahoma;
   letter-spacing: 1px;
 }
 
@@ -24,23 +24,31 @@ div.form {
   align-items: center;
 }
 
+span.checklabel {
+  margin-left: 60px;
+}
+
 label {
   font-size: 20px;
   margin-right: 10px;
+  margin-bottom: 5px;
   color: #1b263b;
 }
 
 input[type="text"] {
   font-size: 18px;
-  font-family: "Lexend Light";
+  font-family: "Lexend Light", Tahoma;
   margin-bottom: 5px;
+  display: block;
 }
 
 span.credits {
-  position:absolute;
+  position: fixed;
   font-size: 14px;
-  bottom:-10%;
-  right:-5%;
+  bottom:0;
+  right:0;
+  padding-bottom: 5px;
+  padding-right: 5px;
 }
 
 div.content {
@@ -51,8 +59,15 @@ div.content {
   position: relative;
 }
 
-div.column {
-  flex: 50%;
+div.leftcolumn {
+  flex: 60%;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+div.rightcolumn {
+  flex: 40%;
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
@@ -60,6 +75,14 @@ div.column {
 
 div.skills {
   margin-top: 5px;
+  float: left;
+  display: inline;
+}
+
+div.checkboxes {
+  display: inline;
+  margin-left: 40px;
+  float: left;
 }
 
 div.buttons {
@@ -74,12 +97,12 @@ span.spacing {
 
 select {
   margin-top: 10px;
-   font-family: "Lexend Light";
+   font-family: "Lexend Light", Tahoma;
   font-size: 16px;
 }
 
 option {
-  font-family: "Lexend Light";
+  font-family: "Lexend Light", Tahoma;
   font-size: 16px;
 }
 
@@ -90,21 +113,28 @@ input[type="submit"] {
     border: none;
     background-color: #ebebeb;
     color: #415a77;
-    font-family: "Lexend Light";
+    font-family: "Lexend Light", Tahoma;
     font-size: 16px;
     text-align: center;
     user-select: none;
     margin-top: 20px;
 }
 
+input[type="checkbox"] {
+    margin: 12px 25px;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
 input[type="submit"]:hover {
     background-color: #dbdbdb;
 }
 
 textarea {
   width: 85%;
-  font-family: "Lexend Light";
+  font-family: "Lexend Light", Tahoma;
   color: #696969;
   font-size: 18px;
   user-select: none;
 }
+
