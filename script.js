@@ -38,6 +38,16 @@ function count_non_empty(arr) {
   return new_arr
 }
 
+function sort_topics(all_topics, checks) {
+  let sorted = []
+  for (let i = 0; i < checks.length; i++) {
+    if (checks[i].checked) {
+      sorted.push(all_topics[i])
+    }
+  }
+  return sorted
+}
+
 function generate_report() {
   let message = ""
   let child_name = document.getElementById("childname").value
@@ -45,8 +55,8 @@ function generate_report() {
   let pronouns = document.querySelector('input[name="pronouns"]:checked').value
   let template_type = document.getElementById("template").value
   let topics_worked = count_non_empty(document.getElementsByClassName("workedskills"))
-  let topics_well = count_non_empty(document.getElementsByClassName("wellskills"))
-  let topics_practice = count_non_empty(document.getElementsByClassName("practiceskills"))
+  let topics_well = sort_topics(topics_worked, document.getElementsByClassName("goodcheck"))
+  let topics_practice = sort_topics(topics_worked, document.getElementsByClassName("practicecheck"))
   let topics_worked_msg = make_topic_list(topics_worked)
   let topics_well_msg = make_topic_list(topics_well)
   let topics_practice_msg = make_topic_list(topics_practice)

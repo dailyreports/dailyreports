@@ -13,7 +13,7 @@
   <h1>Daily Report Generator</h1>
   <div class="content">
   <span class="credits">Ashley Feng | ashley.c.feng@gmail.com</span>
-  <div class="column">
+  <div class="leftcolumn">
   <div class="form">
     <div class = "input">
     <label>Child's First Name</label>
@@ -48,7 +48,7 @@
     <br>
     <span class="spacing"></span>
     <br>
-    <label>Topics Worked On (at least 1):</label>
+    <label>Topics Worked On</label><span class="checklabel">Understood / Practice</span>
     <br>
     <div class="skills">
     <input type="text" class="workedskills forminput" id="workedskill1" name="workedskills">
@@ -56,28 +56,23 @@
     <input type="text" class="workedskills forminput" id="workedskill3" name="workedskills">
     <input type="text" class="workedskills forminput" id="workedskill4" name="workedskills">
     </div>
-    <br>
-    <label>Topic(s) Done Well:</label>
-    <br>
-    <div class="skills">
-    <input type="text" class="wellskills forminput" id="wellskill1" name="wellskills">
-    <input type="text" class="wellskills forminput" id="wellskill2" name="wellskills">
-    <input type="text" class="wellskills forminput" id="wellskill3" name="wellskills">
-    <input type="text" class="wellskills forminput" id="wellskill4" name="wellskills">
+    <div class="checkboxes"> 
+      <input type="checkbox" class="goodcheck" id="wellskill1" name="wellskills">
+      <input type="checkbox" class="goodcheck" id="wellskill2" name="wellskills">
+      <input type="checkbox" class="goodcheck" id="wellskill3" name="wellskills">
+      <input type="checkbox" class="goodcheck" id="wellskill4" name="wellskills">
     </div>
-    <br>
-    <label>Topic(s) To Practice:</label>
-    <br>
-    <div class="skills">
-    <input type="text" class="practiceskills forminput" id="practiceskill1" name="practiceskill1">
-    <input type="text" class="practiceskills forminput" id="practiceskill2" name="practiceskill2">
-    <input type="text" class="practiceskills forminput" id="practiceskill3" name="practiceskill3">
-    <input type="text" class="practiceskills forminput" id="practiceskill4" name="practiceskill4">
+    <div class="checkboxes">
+      <input type="checkbox" class="practicecheck" id="practiceskill1" name="practiceskills">
+      <input type="checkbox" class="practicecheck" id="practiceskill2" name="practiceskills">
+      <input type="checkbox" class="practicecheck" id="practiceskill3" name="practiceskills">
+      <input type="checkbox" class="practicecheck" id="practiceskill4" name="practiceskills">
     </div>
-    <input type="submit" onclick="generate_report()" value="Generate Report"></input>
+    <div style="clear:both"></div>
+    <input class="submitbutton" type="submit" onclick="generate_report()" value="Generate Report"></input>
   </div>
   </div>
-  <div class="column">
+  <div class="rightcolumn">
     <textarea rows="15" id="report" readonly>Click Generate Report...</textarea>
     <div class="buttons">
       <input type="submit" id="copybutton" onclick="copy_message()" value="Copy Message"></input>
